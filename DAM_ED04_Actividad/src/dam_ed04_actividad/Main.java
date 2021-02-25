@@ -5,9 +5,16 @@
 
 package dam_ed04_actividad;
 
-
+/**
+ * 
+ * @author amartinez
+ */
 public class Main {
 
+    /**
+     * 
+     * @param args 
+     */
     public static void main(String[] args) {
         CCuenta cuenta1;
         double saldoActual;
@@ -16,6 +23,10 @@ public class Main {
         operativa_cuenta(cuenta1);
     }
 
+    /**
+     * 
+     * @param cuenta1 
+     */
     private static void operativa_cuenta(CCuenta cuenta1) {
         float cantidad = 0;
         consultaSaldo(cuenta1);
@@ -38,6 +49,10 @@ public class Main {
         }
     }
     
+    /**
+     * 
+     * @param cuenta1 
+     */
     private static void consultaSaldo(CCuenta cuenta1) {
         double saldoActual;
         saldoActual = cuenta1.estado();
