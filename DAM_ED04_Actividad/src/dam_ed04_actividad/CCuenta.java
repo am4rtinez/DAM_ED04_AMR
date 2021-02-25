@@ -17,7 +17,7 @@ public class CCuenta {
     private double tipoInteres;
 
     /**
-     * 
+     * Constructor por defecto de la clase.
      */    
     public CCuenta()
     {
@@ -52,7 +52,7 @@ public class CCuenta {
     }
 
     /**
-     * 
+     * Constructor de la clase CCuenta inicializandolo con parametros.
      * @param nom
      * @param cue
      * @param sal
@@ -75,7 +75,7 @@ public class CCuenta {
     }
 
     /**
-     * 
+     * Metodo para obtener el nombre.
      * @return 
      */
     public String obtenerNombre()
@@ -84,7 +84,7 @@ public class CCuenta {
     }
 
     /**
-     * 
+     * Metodo para consultar el saldo.
      * @return 
      */
     public double estado()
@@ -93,7 +93,7 @@ public class CCuenta {
     }
 
     /**
-     * 
+     * Metodo para ingresar
      * @param cantidad
      * @throws Exception 
      */
@@ -105,7 +105,7 @@ public class CCuenta {
     }
 
     /**
-     * 
+     * Metodo para retirar
      * @param cantidad
      * @throws Exception 
      */
@@ -119,7 +119,7 @@ public class CCuenta {
     }
     
     /**
-     * 
+     * Obtiene la cuenta.
      * @return 
      */
     public String obtenerCuenta()
@@ -128,7 +128,7 @@ public class CCuenta {
     }
 
     /**
-     * 
+     * Get del nombre
      * @return 
      */
     public String getNombre() {
@@ -136,7 +136,7 @@ public class CCuenta {
     }
 
     /**
-     * 
+     * Set del nombre
      * @param nombre 
      */
     public void setNombre(String nombre) {
@@ -144,7 +144,7 @@ public class CCuenta {
     }
 
     /**
-     * 
+     * Get del tipo de Interes.
      * @return 
      */
     public double getTipoInteres() {
@@ -152,7 +152,7 @@ public class CCuenta {
     }
 
     /**
-     * 
+     * HSet del tipo de Interes.
      * @param tipoInteres 
      */
     public void setTipoInteres(double tipoInteres) {

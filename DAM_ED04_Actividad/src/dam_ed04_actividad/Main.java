@@ -12,7 +12,7 @@ package dam_ed04_actividad;
 public class Main {
 
     /**
-     * 
+     * Metodo main.
      * @param args 
      */
     public static void main(String[] args) {
@@ -24,7 +24,7 @@ public class Main {
     }
 
     /**
-     * 
+     * Metodo que realiza la operativa de las cuentas.
      * @param cuenta1 
      */
     private static void operativa_cuenta(CCuenta cuenta1) {
@@ -50,7 +50,7 @@ public class Main {
     }
     
     /**
-     * 
+     * Metodo para consultar el saldo y lo imprime en pantalla.
      * @param cuenta1 
      */
     private static void consultaSaldo(CCuenta cuenta1) {
