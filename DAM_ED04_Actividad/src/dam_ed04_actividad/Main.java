@@ -17,19 +17,31 @@ public class Main {
     }
 
     private static void operativa_cuenta(CCuenta cuenta1) {
-        double saldoActual;
-        saldoActual = cuenta1.estado();
-        System.out.println("El saldo actual es"+ saldoActual );
+        float cantidad = 0;
+        consultaSaldo(cuenta1);
         try {
-            cuenta1.retirar(2300);
+            cantidad = 2300;
+            System.out.println("Retirada de :" + cantidad);
+            cuenta1.retirar(cantidad);
+            consultaSaldo(cuenta1);
+            
         } catch (Exception e) {
-            System.out.print("Fallo al retirar");
+            System.out.println("Fallo al retirar");
         }
         try {
-            System.out.println("Ingreso en cuenta");
-            cuenta1.ingresar(695);
+            cantidad = 695;
+            System.out.println("Ingreso en cuenta de " + cantidad);
+            cuenta1.ingresar(cantidad);
+            consultaSaldo(cuenta1);
         } catch (Exception e) {
-            System.out.print("Fallo al ingresar");
+            System.out.println("Fallo al ingresar");
         }
     }
+    
+    private static void consultaSaldo(CCuenta cuenta1) {
+        double saldoActual;
+        saldoActual = cuenta1.estado();
+        System.out.println("El saldo actual es "+ saldoActual );
+    }
+    
 }
